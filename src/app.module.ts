@@ -8,10 +8,10 @@ import { PostsModule } from './modules/posts/posts.module';
 
 @Module({
   imports: [
-    DatabaseModule, 
+    DatabaseModule,
     ConfigModule.forRoot({ isGlobal: true }),
     AuthModule,
-    PostsModule
+    PostsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
